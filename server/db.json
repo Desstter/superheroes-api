@@ -1,0 +1,151 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "nombre": "Punisher",
+      "puedeVolar": false,
+      "nombreReal": "Frank Castle",
+      "avatarURL": "https://static.vix.com/es/sites/default/files/styles/1x1/public/btg/the-punisher-1-2016-variante-alex-maleev-portada-primera.jpg"
+    },
+    {
+      "id": 1,
+      "nombre": "Green Arrow",
+      "puedeVolar": false,
+      "nombreReal": "Oliver Jonas Queen",
+      "avatarURL": "https://i.pinimg.com/originals/56/6a/f2/566af2989cc4aa5a765b671c0902b0d1.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Human Torch",
+      "puedeVolar": true,
+      "nombreReal": "Jonathan Lowell Spencer",
+      "avatarURL": "https://i.annihil.us/u/prod/marvel/i/mg/f/30/4bb68a1bedf63/detail.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Martian Manhunter",
+      "puedeVolar": true,
+      "nombreReal": "J'onn J'onzz",
+      "avatarURL": "https://sm.ign.com/t/ign_es/gallery/t/the-snyder/the-snyder-cuts-martian-manhunter-revealed-in-justice-league_4awz.1080.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Aquaman",
+      "puedeVolar": false,
+      "nombreReal": "Arthur Curry",
+      "avatarURL": "https://w0.peakpx.com/wallpaper/994/410/HD-wallpaper-aquaman-aquaman-comicbook-poster.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Daredevil",
+      "puedeVolar": false,
+      "nombreReal": "Matthew Michael",
+      "avatarURL": "https://i.pinimg.com/originals/63/e8/bd/63e8bd9763f70b479eadddd362ade7be.png"
+    },
+    {
+      "id": 6,
+      "nombre": "Dick Grayson",
+      "puedeVolar": false,
+      "nombreReal": "Richard John Grayson",
+      "avatarURL": "https://blog.normacomics.com/wp-content/uploads/2019/09/Dick-Grayson.jpg"
+    },
+    {
+      "id": 7,
+      "nombre": "Hulk",
+      "puedeVolar": false,
+      "nombreReal": "Bruce Banner",
+      "avatarURL": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2019/02/Hulk.jpg?itok=sUKy32qZ"
+    },
+    {
+      "id": 8,
+      "nombre": "Flash",
+      "puedeVolar": false,
+      "nombreReal": "Jay Garrick",
+      "avatarURL": "https://img.vixdata.io/pd/jpg-large/es/sites/default/files/btg/cine.batanga.com/files/Nuevos-rumores-sobre-el-traje-de-Flash-en-las-peliculas-de-DC.jpg"
+    },
+    {
+      "id": 9,
+      "nombre": "Thor",
+      "puedeVolar": true,
+      "nombreReal": "Thor Odinson",
+      "avatarURL": "https://i.pinimg.com/originals/df/f1/dd/dff1ddc600819e5f1aa8e95a788d5584.jpg"
+    },
+    {
+      "id": 10,
+      "nombre": "Black Widow",
+      "puedeVolar": false,
+      "nombreReal": "Natalia Alianovna",
+      "avatarURL": "https://f.rpp-noticias.io/2020/04/23/932115black-widow-comicjpg.jpg"
+    },
+    {
+      "id": 11,
+      "nombre": "Captain America",
+      "puedeVolar": false,
+      "nombreReal": "Steven Grant Rogers",
+      "avatarURL": "https://oyster.ignimgs.com/wordpress/stg.ign.com/2016/03/image_22.jpg"
+    },
+    {
+      "id": 12,
+      "nombre": "Wolverine",
+      "puedeVolar": false,
+      "nombreReal": "James Howlett",
+      "avatarURL": "https://dam.smashmexico.com.mx/wp-content/uploads/2018/11/wolverinebio_portada.gif"
+    },
+    {
+      "id": 13,
+      "nombre": "Batman",
+      "puedeVolar": false,
+      "nombreReal": "Bruce Wayne ",
+      "avatarURL": "https://www.geekmi.news/__export/1604437633818/sites/debate/img/2020/11/03/batman.jpg_242310155.jpg"
+    },
+    {
+      "id": 14,
+      "nombre": "Deadpool",
+      "puedeVolar": false,
+      "nombreReal": "Wade Wilson",
+      "avatarURL": "https://www.geekmi.news/__export/1615759630464/sites/debate/img/2021/03/14/noticia-1580163147-marvel-deadpool-morira-en-la-nueva-serie-de-comics-end.jpg_1902800913.jpg"
+    },
+    {
+      "id": 15,
+      "nombre": "Wonder Woman",
+      "puedeVolar": true,
+      "nombreReal": "Diana Prince",
+      "avatarURL": "https://www.comixcity.net/img/cms/wonder%20woman/wonder%20woman%20en%20el%20inicio.jpg"
+    },
+    {
+      "id": 16,
+      "nombre": "Iron Man",
+      "puedeVolar": true,
+      "nombreReal": "Tony Stark",
+      "avatarURL": "https://sm.ign.com/ign_latam/screenshot/default/im_tvtm.jpg"
+    },
+    {
+      "id": 17,
+      "nombre": "Superman",
+      "puedeVolar": true,
+      "nombreReal": "Clark Kent",
+      "avatarURL": "https://www.cinemascomics.com/wp-content/uploads/2021/06/superman-comics-dest.jpg"
+    },
+    {
+      "id": 18,
+      "nombre": "Spiderman",
+      "puedeVolar": false,
+      "nombreReal": "Peter Benjamin Parker",
+      "avatarURL": "https://dam.smashmexico.com.mx/wp-content/uploads/2018/09/07142333/spidermanbio_portada.jpg"
+    },
+    {
+      "id": 19,
+      "nombre": "Green Lantern",
+      "puedeVolar": true,
+      "nombreReal": "Hal Jordan",
+      "avatarURL": "https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2020/05/Green-Lantern.jpg?fit=1080%2C609&quality=80&ssl=1"
+    },
+    {
+      "id": 20,
+      "nombre": "Mystique",
+      "puedeVolar": false,
+      "nombreReal": "Raven Darkhölme",
+      "avatarURL": "https://sm.ign.com/ign_latam/screenshot/default/myst_qbym.jpg"
+    }
+  ]
+}

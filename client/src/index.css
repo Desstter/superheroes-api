@@ -1,0 +1,30 @@
+.card:hover{
+  cursor: pointer;
+}
+.cardImages{
+  image-rendering:optimizeQuality;
+  
+}
+#search{
+ padding-right: 10em;
+}
+
+#divIcon{
+  position: absolute;
+  margin: 3px 0 0 5px;
+}
+
+#searchInput{
+  padding-left: 2em;
+}
+
+#herosView{
+  background-image: url('https://neufeldinstitute.org/wp-content/uploads/2016/06/web-main-background-grayscale.jpg');
+  min-height: 100vh;
+}
+
+@media (max-width: 767px) {
+  #herosView{
+    text-align: center;
+  }
+}
