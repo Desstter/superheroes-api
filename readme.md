@@ -1,17 +1,28 @@
-# Instalación
+# Superheroes API
 
-Entrar **primero** a la carpeta *server*, abrir terminal ejecutar:
+Explorador de superhéroes que consume la [Superhero API](https://www.superheroapi.com/). Busca cualquier héroe o villano, consulta sus estadísticas de poder y compara personajes.
 
-`npm install`
+## Stack
 
-Esperar a que se descarguen las dependencias y después ejecutar:
+JavaScript · Node.js · Express · JSON Server
 
-`npx json-server --watch db.json`
+## Features
 
-Vamos una carpeta hacia atrás para entrar a *client*, abrimos otra terminal y ejecutamos:
+- Búsqueda de superhéroes por nombre
+- Visualización de estadísticas: inteligencia, fuerza, velocidad, durabilidad, poder y combate
+- Datos de biografía, apariencia y conexiones
+- Backend con json-server para datos locales
 
-`npm install`
+## Setup
 
-Posteriormente:
+```bash
+# Servidor (primero)
+cd server
+npm install
+npx json-server --watch db.json
 
-`npm start`
+# Cliente (en otra terminal)
+cd client
+npm install
+npm start
+```
