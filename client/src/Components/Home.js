@@ -1,63 +1,94 @@
-import React, { useEffect, useState } from "react";
-import { Container, Col, Row, Card } from "react-bootstrap";
+import React, { useEffect, useState, useCallback } from "react";
+import { Container, Col, Row, Card, Spinner } from "react-bootstrap";
 import NavBar from "./NavBar";
 import db from "../api/db";
 import { Link } from "react-router-dom";
 
+const heroPlaceholder = (name) => {
+  const initials = name
+    .split(" ")
+    .map((w) => w[0])
+    .join("")
+    .slice(0, 2)
+    .toUpperCase();
+  const palette = ["#c0392b", "#d35400", "#8e44ad", "#2980b9", "#16a085", "#2c3e50"];
+  const color = palette[name.charCodeAt(0) % palette.length];
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400">
+    <rect width="400" height="400" fill="${color}"/>
+    <text x="200" y="215" font-family="Arial,sans-serif" font-size="130" font-weight="bold"
+      fill="rgba(255,255,255,0.9)" text-anchor="middle" dominant-baseline="middle">${initials}</text>
+  </svg>`;
+  return `data:image/svg+xml;base64,${btoa(svg)}`;
+};
+
 const Home = () => {
-  const [content, setContent] = useState();
+  const [heroes, setHeroes] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [searchValue, setSearchValue] = useState("");
-  let [type, setType] = useState("All");
+  const [type, setType] = useState("All");
 
   useEffect(() => {
-    const getData = async () => {
-      const response = await db.get("data");
+    db.get("data")
+      .then((response) => setHeroes(response.data))
+      .catch(() => setHeroes([]))
+      .finally(() => setLoading(false));
+  }, []);
 
-      let data = response.data.filter((val) => {
-        if (
-          val.nombre.toLowerCase().includes(searchValue.toLowerCase()) &&
-          val.puedeVolar === type
-        )
-          return val;
-        if (type === "All") return val;
-      });
+  const filtered = heroes.filter((hero) => {
+    const matchesSearch = hero.nombre.toLowerCase().includes(searchValue.toLowerCase());
+    const matchesType = type === "All" || hero.puedeVolar === type;
+    return matchesSearch && matchesType;
+  });
 
-      const rows = [...Array(Math.ceil(data.length / 3))];
-      const imagesRows = rows.map((row, idx) =>
-        data.slice(idx * 3, idx * 3 + 3)
+  const renderCards = useCallback(() => {
+    const rows = [];
+    for (let i = 0; i < filtered.length; i += 3) {
+      const chunk = filtered.slice(i, i + 3);
+      rows.push(
+        <Row className="mt-4 g-4" key={i}>
+          {chunk.map((hero) => (
+            <Col xs={12} sm={6} lg={4} key={hero.id}>
+              <Link to={`/hero/${hero.id}`} style={{ textDecoration: "none" }}>
+                <Card className="hero-card h-100">
+                  <Card.Img
+                    variant="top"
+                    src={hero.avatarURL}
+                    className="hero-card-img"
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = heroPlaceholder(hero.nombre);
+                    }}
+                  />
+                  <Card.Body>
+                    <Card.Title className="mb-1">{hero.nombre}</Card.Title>
+                    <small className="text-muted">
+                      {hero.puedeVolar ? "✈ Can fly" : "🚶 Ground hero"}
+                    </small>
+                  </Card.Body>
+                </Card>
+              </Link>
+            </Col>
+          ))}
+        </Row>
       );
-
-      setContent(
-        imagesRows.map((row, idx) => (
-          <Row className="mt-4">
-            {row.map((data) => (
-              <Col xs={12} lg={4}>
-                <Link to={`/hero/${data.id}`}>
-                  <Card>
-                    <Card.Img
-                      variant="top"
-                      src={data.avatarURL}
-                      height="400px"
-                      className="cardImages"
-                    />
-                    <Card.Body>
-                      <Card.Title>{data.nombre}</Card.Title>
-                    </Card.Body>
-                  </Card>
-                </Link>
-              </Col>
-            ))}
-          </Row>
-        ))
-      );
-    };
-    getData();
-  }, [type, searchValue]);
+    }
+    return rows;
+  }, [filtered]);
 
   return (
     <>
       <NavBar setSearchValue={setSearchValue} setType={setType} />
-      <Container>{content >= 0 ? <p>No results</p> : content}</Container>
+      <Container className="pb-5">
+        {loading ? (
+          <div className="text-center mt-5">
+            <Spinner animation="border" variant="light" />
+          </div>
+        ) : filtered.length === 0 ? (
+          <p className="text-center text-white mt-5">No heroes found.</p>
+        ) : (
+          renderCards()
+        )}
+      </Container>
     </>
   );
 };

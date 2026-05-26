@@ -1,30 +1,159 @@
-.card:hover{
+/* ── Global ── */
+body {
+  background-color: #0d0d1a;
+  color: #f0f0f0;
+}
+
+/* ── Navbar ── */
+.hero-brand {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+#searchWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 8px;
+  color: #aaa;
+  font-size: 1.1rem;
+  pointer-events: none;
+}
+
+#searchInput {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 6px 12px 6px 32px;
+  color: #fff;
+  outline: none;
+  width: 200px;
+  transition: border-color 0.2s, width 0.2s;
+}
+
+#searchInput::placeholder {
+  color: #888;
+}
+
+#searchInput:focus {
+  border-color: rgba(255, 255, 255, 0.4);
+  width: 240px;
+}
+
+.nav-filter {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #ccc !important;
+  padding: 4px 10px !important;
+  border-radius: 12px;
+  transition: background 0.15s;
+}
+
+.nav-filter:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff !important;
+}
+
+/* ── Hero Cards ── */
+.hero-card {
+  background: #1a1a2e;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
 }
-.cardImages{
-  image-rendering:optimizeQuality;
-  
-}
-#search{
- padding-right: 10em;
+
+.hero-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
 }
 
-#divIcon{
-  position: absolute;
-  margin: 3px 0 0 5px;
+.hero-card .card-title {
+  color: #f0f0f0;
+  font-weight: 600;
+  margin-bottom: 4px;
 }
 
-#searchInput{
-  padding-left: 2em;
+.hero-card-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: top;
 }
 
-#herosView{
-  background-image: url('https://neufeldinstitute.org/wp-content/uploads/2016/06/web-main-background-grayscale.jpg');
+/* ── Hero Detail View ── */
+#herosView {
+  background: linear-gradient(180deg, #0d0d1a 0%, #1a1a2e 100%);
   min-height: 100vh;
 }
 
+.hero-back-link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.15s;
+}
+
+.hero-back-link:hover {
+  color: #fff;
+}
+
+.hero-detail-card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+.hero-detail-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.hero-info-block {
+  margin-bottom: 2rem;
+}
+
+.info-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 6px;
+}
+
+.info-value {
+  font-size: 1.1rem;
+  color: #f0f0f0;
+  margin: 0;
+}
+
+.hero-badge {
+  font-size: 0.8rem;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+/* ── Responsive ── */
 @media (max-width: 767px) {
-  #herosView{
+  #herosView {
     text-align: center;
+  }
+
+  .hero-detail-img {
+    height: 320px;
+  }
+
+  #searchInput {
+    width: 160px;
   }
 }

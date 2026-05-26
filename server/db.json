@@ -5,7 +5,7 @@
       "nombre": "Punisher",
       "puedeVolar": false,
       "nombreReal": "Frank Castle",
-      "avatarURL": "https://static.vix.com/es/sites/default/files/styles/1x1/public/btg/the-punisher-1-2016-variante-alex-maleev-portada-primera.jpg"
+      "avatarURL": "https://i.annihil.us/u/prod/marvel/i/mg/6/30/55b6a25e654e6/detail.jpg"
     },
     {
       "id": 1,
@@ -40,7 +40,7 @@
       "nombre": "Daredevil",
       "puedeVolar": false,
       "nombreReal": "Matthew Michael",
-      "avatarURL": "https://i.pinimg.com/originals/63/e8/bd/63e8bd9763f70b479eadddd362ade7be.png"
+      "avatarURL": "https://i.annihil.us/u/prod/marvel/i/mg/6/90/537ba6d49472b/detail.jpg"
     },
     {
       "id": 6,
@@ -54,48 +54,48 @@
       "nombre": "Hulk",
       "puedeVolar": false,
       "nombreReal": "Bruce Banner",
-      "avatarURL": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2019/02/Hulk.jpg?itok=sUKy32qZ"
+      "avatarURL": "https://i.annihil.us/u/prod/marvel/i/mg/5/a0/538615ca33ab0/detail.jpg"
     },
     {
       "id": 8,
       "nombre": "Flash",
       "puedeVolar": false,
       "nombreReal": "Jay Garrick",
-      "avatarURL": "https://img.vixdata.io/pd/jpg-large/es/sites/default/files/btg/cine.batanga.com/files/Nuevos-rumores-sobre-el-traje-de-Flash-en-las-peliculas-de-DC.jpg"
+      "avatarURL": "https://i.pinimg.com/originals/d9/6e/3f/d96e3f4f1e8a2b6c4e1f3c8d5f2b9e7a.jpg"
     },
     {
       "id": 9,
       "nombre": "Thor",
       "puedeVolar": true,
       "nombreReal": "Thor Odinson",
-      "avatarURL": "https://i.pinimg.com/originals/df/f1/dd/dff1ddc600819e5f1aa8e95a788d5584.jpg"
+      "avatarURL": "https://i.annihil.us/u/prod/marvel/i/mg/7/10/537bc71e9286f/detail.jpg"
     },
     {
       "id": 10,
       "nombre": "Black Widow",
       "puedeVolar": false,
       "nombreReal": "Natalia Alianovna",
-      "avatarURL": "https://f.rpp-noticias.io/2020/04/23/932115black-widow-comicjpg.jpg"
+      "avatarURL": "https://i.annihil.us/u/prod/marvel/i/mg/f/30/50fecad1f395b/detail.jpg"
     },
     {
       "id": 11,
       "nombre": "Captain America",
       "puedeVolar": false,
       "nombreReal": "Steven Grant Rogers",
-      "avatarURL": "https://oyster.ignimgs.com/wordpress/stg.ign.com/2016/03/image_22.jpg"
+      "avatarURL": "https://i.annihil.us/u/prod/marvel/i/mg/3/50/537ba56d31087/detail.jpg"
     },
     {
       "id": 12,
       "nombre": "Wolverine",
       "puedeVolar": false,
       "nombreReal": "James Howlett",
-      "avatarURL": "https://dam.smashmexico.com.mx/wp-content/uploads/2018/11/wolverinebio_portada.gif"
+      "avatarURL": "https://i.annihil.us/u/prod/marvel/i/mg/2/60/537bcaef0f6cf/detail.jpg"
     },
     {
       "id": 13,
       "nombre": "Batman",
       "puedeVolar": false,
-      "nombreReal": "Bruce Wayne ",
+      "nombreReal": "Bruce Wayne",
       "avatarURL": "https://www.geekmi.news/__export/1604437633818/sites/debate/img/2020/11/03/batman.jpg_242310155.jpg"
     },
     {
@@ -103,7 +103,7 @@
       "nombre": "Deadpool",
       "puedeVolar": false,
       "nombreReal": "Wade Wilson",
-      "avatarURL": "https://www.geekmi.news/__export/1615759630464/sites/debate/img/2021/03/14/noticia-1580163147-marvel-deadpool-morira-en-la-nueva-serie-de-comics-end.jpg_1902800913.jpg"
+      "avatarURL": "https://i.annihil.us/u/prod/marvel/i/mg/9/90/5261a86cacb99/detail.jpg"
     },
     {
       "id": 15,
@@ -117,7 +117,7 @@
       "nombre": "Iron Man",
       "puedeVolar": true,
       "nombreReal": "Tony Stark",
-      "avatarURL": "https://sm.ign.com/ign_latam/screenshot/default/im_tvtm.jpg"
+      "avatarURL": "https://i.annihil.us/u/prod/marvel/i/mg/9/c0/527bb7b37ff55/detail.jpg"
     },
     {
       "id": 17,
@@ -131,7 +131,7 @@
       "nombre": "Spiderman",
       "puedeVolar": false,
       "nombreReal": "Peter Benjamin Parker",
-      "avatarURL": "https://dam.smashmexico.com.mx/wp-content/uploads/2018/09/07142333/spidermanbio_portada.jpg"
+      "avatarURL": "https://i.annihil.us/u/prod/marvel/i/mg/3/50/526548a343e4b/detail.jpg"
     },
     {
       "id": 19,
